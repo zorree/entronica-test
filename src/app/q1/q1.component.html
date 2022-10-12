@@ -1,0 +1,36 @@
+<form [formGroup]="elevator" (ngSubmit)="onSubmit()">
+    <div class="text-center">
+      <div class="row mb-3">
+        <div class="col">
+          <h4>• left elevator </h4>
+          <select class="form-select text-center" aria-label="Default select example" formControlName="left">
+            <option value="0" selected>0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+          </select>
+        </div>
+        <div class="col">
+          <h4>• right elevator </h4>
+          <select class="form-select text-center" aria-label="Default select example" formControlName="right">
+            <option value="0" selected>0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+          </select>
+        </div>
+        <div class="col">
+          <h4>• called an elevator </h4>
+          <select class="form-select text-center" aria-label="Default select example" formControlName="call">
+            <option value="0" selected>0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+          </select>
+        </div>
+      </div>
+      <div class="row mb-5">
+        <div class="col"><button type="submit" class="btn btn-success">Check</button></div>
+      </div>
+      <div class="row">
+        <div class="col"><h1>{{ elevator_call }}</h1></div>
+      </div>
+    </div>
+  </form>

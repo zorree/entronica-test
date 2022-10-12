@@ -1,0 +1,28 @@
+<div class="text-center">
+    <div class="row mb-3">
+        <div class="col">
+            <h4>BLACKJACK SCORE</h4>
+        </div>
+    </div>
+    <div class="row mb-3">
+        <div class="col">
+            <h4>RANDOM CARD</h4>
+        </div>
+    </div>
+    <div class="row mb-5">
+        <div class="col">
+            <button type="submit" class="btn btn-success me-2" (click)="_randomcard()">RAMDOM CARD</button>
+            <button type="submit" class="btn btn-success ms-2" (click)="_clearcard()">CLEAR</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <h1>{{ showcard }}</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <h1>{{ score }}</h1>
+        </div>
+    </div>
+</div>

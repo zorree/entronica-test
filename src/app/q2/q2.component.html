@@ -1,0 +1,18 @@
+<form [formGroup]="check" (ngSubmit)="onSubmit()">
+    <div class="text-center">
+        <div class="row mb-3">
+            <div class="col">
+                <h4> input number </h4>
+                <input type="text" class="form-control text-center" formControlName="check_num">
+            </div>
+        </div>
+        <div class="row mb-5">
+            <div class="col"><button type="submit" class="btn btn-success">Check</button></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h1>{{ elevator_call }}</h1>
+            </div>
+        </div>
+    </div>
+</form>
